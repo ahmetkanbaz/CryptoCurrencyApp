@@ -5,7 +5,7 @@ import homeHeroBanner from '../../../../assets/banner/homeHeroBanner.png'
 const HeroBanner = () => {
   return (
     <HeroBannerStyle className="py-5">
-      <div className="container">
+      <div className="container py-5">
         <div className="row align-items-center">
           <HeroBannerInfo />
           <ImageWrapper image={homeHeroBanner} />

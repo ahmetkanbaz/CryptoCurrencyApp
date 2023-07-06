@@ -1,7 +1,7 @@
 import Button from "../../../../../common/Button/Button";
 const HeroBannerInfo = () => {
   return (
-    <div className="col-lg-6 col-12 px-4">
+    <div className="col-lg-6 col-12 px-4 mb-4 mb-lg-0">
       <h1 className="fw-bold text-capitalize">
         The world’s most popular way to buy and sell crypto
       </h1>

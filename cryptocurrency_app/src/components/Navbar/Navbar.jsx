@@ -18,7 +18,6 @@ const Navbar = () => {
             className="img-fluid"
             width="100px"
           />
-          <span className="fs-5">CryptoCurrency</span>
         </Link>
         <button
           className="navbar-toggler"
@@ -32,7 +31,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ps-lg-5 me-auto mb-2 mb-lg-0 gap-3">
+          <ul className="navbar-nav ps-lg-5 me-auto mb-2 mb-lg-0 gap-lg-3 gap-0">
             <li className="nav-item">
               <Link to="/" className="nav-link">
                 Home

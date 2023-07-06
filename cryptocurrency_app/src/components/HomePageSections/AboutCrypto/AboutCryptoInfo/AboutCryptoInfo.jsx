@@ -1,4 +1,5 @@
 import AboutCryptoInfoList from "./AboutCryptoInfoList/AboutCryptoInfoList";
+import Button from "../../../../common/Button/Button";
 const AboutCryptoInfo = () => {
   return (
     <div className="col-lg-6 col-12">
@@ -17,8 +18,18 @@ const AboutCryptoInfo = () => {
       </p>
       <div>
         <AboutCryptoInfoList content="Cryptocurrencies: decentralized, blockchain, transparency, security, immutability, transaction records." />
-        <AboutCryptoInfoList content = "Fiat currencies: traditional, central authority, government, financial institution, control, funds." />
-        <AboutCryptoInfoList content = "Cross-border payments: fast, borderless transactions, intermediaries, transaction fees, useful, remittances." />
+        <AboutCryptoInfoList content="Fiat currencies: traditional, central authority, government, financial institution, control, funds." />
+        <AboutCryptoInfoList content="Cross-border payments: fast, borderless transactions, intermediaries, transaction fees, useful, remittances." />
+      </div>
+      <div className="d-flex justify-content-end">
+        <Button
+          buttonText="Learn More"
+          backgroundcolor="#72b0d9"
+          padding=".5rem 1.4rem"
+          color="#FFFFFF"
+          border="none"
+          fontSize=".9rem"
+        />
       </div>
     </div>
   );
