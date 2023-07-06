@@ -12,8 +12,9 @@ const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container">
-          <Link to='/' className="navbar-brand">
+          <Link to='/' className="navbar-brand d-flex align-items-center">
             <img src={cryptoLogo} alt="logo" className='img-fluid' width='100px'/>
+            <span className='fs-5'>CryptoCurrency</span>
           </Link>
           <button
             className="navbar-toggler"
@@ -27,7 +28,7 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav ps-lg-5 me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link to='/' className="nav-link">
                   Home
