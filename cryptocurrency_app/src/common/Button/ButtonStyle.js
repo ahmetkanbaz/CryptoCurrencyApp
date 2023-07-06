@@ -7,4 +7,5 @@ export const ButtonStyle = styled.button`
   border: ${(props) => props.border};
   color: ${(props) => props.color};
   font-size: ${(props) => props.fontSize};
+  border-radius: 57px;
 `;
