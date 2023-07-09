@@ -2,7 +2,7 @@ import AboutCryptoInfoList from "./AboutCryptoInfoList/AboutCryptoInfoList";
 import Button from "../../../../common/Button/Button";
 const AboutCryptoInfo = () => {
   return (
-    <div className="col-lg-6 col-12">
+    <div className="col-lg-6 col-12 ps-lg-5">
       <h2 className="fw-bold">About Crypto</h2>
       <p className="text-info pt-4 mb-2">
         Cryptocurrencies have gained significant popularity in recent years, and

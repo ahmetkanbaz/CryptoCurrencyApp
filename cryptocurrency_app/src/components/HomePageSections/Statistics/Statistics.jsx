@@ -1,5 +1,5 @@
 import SingleStatisticCard from "./SingleStatisticCard/SingleStatisticCard";
-import { StatisticsContainer } from "./StatisticsStyle";
+import { BackgroundStyle } from "./StatisticsStyle";
 const Statistics = () => {
   const statisticsDatas = [
     {
@@ -23,13 +23,13 @@ const Statistics = () => {
   ];
   return (
     <div className="py-5">
-      <StatisticsContainer className="container py-5 rounded">
+      <BackgroundStyle className="container py-5 rounded">
         <div className="row">
           {
             statisticsDatas.map((statisticsData, index) => <SingleStatisticCard key={index} statisticsData = {statisticsData} />)
           }
         </div>
-      </StatisticsContainer>
+      </BackgroundStyle>
     </div>
   );
 };
