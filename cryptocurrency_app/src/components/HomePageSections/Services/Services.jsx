@@ -1,5 +1,5 @@
 import UpperSection from "../../../common/UpperSection/UpperSection";
-import { BackgroundStyle } from "../Statistics/StatisticsStyle";
+import { BackgroundStyle } from "../../../common/BackgroundStyle/BackgroundStyle";
 import SingleCardServices from "./SingleCardServices/SingleCardServices";
 
 const Services = () => {

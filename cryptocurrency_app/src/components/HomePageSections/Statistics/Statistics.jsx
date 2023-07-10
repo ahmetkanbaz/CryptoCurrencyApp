@@ -1,5 +1,5 @@
 import SingleStatisticCard from "./SingleStatisticCard/SingleStatisticCard";
-import { BackgroundStyle } from "./StatisticsStyle";
+import { BackgroundStyle } from "../../../common/BackgroundStyle/BackgroundStyle";
 const Statistics = () => {
   const statisticsDatas = [
     {
