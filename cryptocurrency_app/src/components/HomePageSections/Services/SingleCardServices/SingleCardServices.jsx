@@ -13,11 +13,11 @@ const SingleCardServices = ({ singleService }) => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos maxime
           distinctio, mollitia labore cum aperiam?
         </p>
-        <div className="d-flex gap-2 align-items-center">
-          <a href="#" className="text-decoration-none text-info">
+        <div>
+          <a href="#" className="text-decoration-none text-info d-flex gap-2 align-items-center">
             Read More
+            <AiOutlineArrowRight className="text-info" />
           </a>
-          <AiOutlineArrowRight className="text-info" cursor='pointer'/>
         </div>
       </div>
     </SingleService>

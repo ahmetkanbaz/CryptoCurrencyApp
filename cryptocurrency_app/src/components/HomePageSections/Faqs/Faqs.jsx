@@ -3,7 +3,7 @@ import Accordion from './Accordion/Accordion';
 const Faqs = () => {
   return (
     <div className="py-5">
-      <div className="container py-5">
+      <div className="container pb-5">
         <UpperSection title='FAQs' subTitle='Frequently Asked Questions' />
         <Accordion />
       </div>
