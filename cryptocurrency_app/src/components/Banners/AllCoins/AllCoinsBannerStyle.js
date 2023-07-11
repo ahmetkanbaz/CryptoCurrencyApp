@@ -6,5 +6,5 @@ export const AllCoinsBannerWrapper = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 75vh;
 `;

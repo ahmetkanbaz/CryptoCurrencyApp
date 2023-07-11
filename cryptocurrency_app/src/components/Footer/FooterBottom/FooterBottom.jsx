@@ -4,12 +4,12 @@ const FooterBottom = () => {
       <div className="d-flex justify-content-between align-items-center pb-4">
         <div className="opacity-50">
           <a
-            href="https://rapidapi.com/Glavier/api/binance43"
+            href="https://www.coingecko.com/tr"
             className="fw-bold text-decoration-none text-black"
             target="_blank"
             rel="noreferrer"
           >
-            Binance API
+            Coin Gecko
           </a>
           <span> was used while developing the project.</span>
         </div>

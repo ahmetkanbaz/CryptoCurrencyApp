@@ -2,7 +2,7 @@ import { AllCoinsBannerWrapper } from "./AllCoinsBannerStyle";
 const AllCoinsBanner = () => {
   return (
     <AllCoinsBannerWrapper className="py-5">
-      <div className="container py-5 d-flex flex-column align-items-center text-center text-white">
+      <div className="container h-100 d-flex flex-column align-items-center justify-content-center text-center text-white">
         <h2 className="fw-bold mb-4">Step into the Cryptocurrency World</h2>
         <p className="w-75">
           Our project is your ultimate goal to navigate the exciting world of
