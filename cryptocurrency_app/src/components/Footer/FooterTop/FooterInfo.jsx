@@ -2,7 +2,7 @@ import cryptoLogo from "../../../assets/logo/cryptoLogo.png";
 const FooterInfo = () => {
   return (
     <div className="col-md-6 col-12">
-      <div className="d-flex align-items-center">
+      <div className="d-flex flex-wrap align-items-center">
         <img src={cryptoLogo} alt="footerLogo" className="img-fluid w-25" />
         <h3>CryptoCurrency</h3>
       </div>

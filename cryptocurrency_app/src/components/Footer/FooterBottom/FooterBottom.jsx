@@ -18,6 +18,8 @@ const FooterBottom = () => {
           <a
             href="https://htmlcodex.com/"
             className="text-info text-decoration-none"
+            target="_blank"
+            rel="noreferrer"
           >
             HTML Codex
           </a>
@@ -28,7 +30,7 @@ const FooterBottom = () => {
         <a
           href="https://github.com/ahmetkanbaz"
           target="_blank"
-          className="text-decoration-none ms-1"
+          className="text-decoration-none ms-lg-1"
           rel="noreferrer"
         >
           Ahmet Kanbaz
