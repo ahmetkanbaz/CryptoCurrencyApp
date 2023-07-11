@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import { moneyFormat } from "../../../helpers/moneyFormat";
 const AllCoinsTableItem = ({ coin }) => {
-  console.log(coin);
   const {
     id,
     image,
@@ -13,18 +12,16 @@ const AllCoinsTableItem = ({ coin }) => {
     high_24h,
     low_24h,
     price_change_percentage_24h,
-    circulating_supply
+    circulating_supply,
   } = coin;
 
   let percentage;
-  if(price_change_percentage_24h == 0) {
-    percentage = 'text-black'
-  }
-  else if (price_change_percentage_24h < 0) {
-    percentage = 'text-danger'
-  }
-  else {
-    percentage = 'text-success'
+  if (price_change_percentage_24h == 0) {
+    percentage = "text-black";
+  } else if (price_change_percentage_24h < 0) {
+    percentage = "text-danger";
+  } else {
+    percentage = "text-success";
   }
   return (
     <tr>

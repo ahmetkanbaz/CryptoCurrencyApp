@@ -1,15 +1,25 @@
 import { BsSunFill, BsMoonFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import cryptoLogo from "../../assets/logo/cryptoLogo.png";
-import { useState } from "react";
+import { setTheme } from "../../redux/slices/themeSlice/themeSlice";
+import { useDispatch, useSelector } from "react-redux";
+import {NavbarStyle} from './NavbarStyle'
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const dispath = useDispatch()
+  const theme = useSelector((state) => state.theme.theme)
 
   const handleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
+    dispath(setTheme('light'))
+    localStorage.setItem('allCoinsTheme', JSON.stringify('light'))
+  }
+
+  const handleLightMode = () => {
+    dispath(setTheme('dark'))
+    localStorage.setItem('allCoinsTheme', JSON.stringify('dark'));
+  }
+
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <NavbarStyle className="navbar navbar-expand-lg sticky-top" theme={theme}>
       <div className="container">
         <Link to="/" className="navbar-brand d-flex align-items-center">
           <img
@@ -44,7 +54,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div>
-            {darkMode ? (
+            {theme == 'dark' ? (
               <BsMoonFill
                 size="1.2rem"
                 cursor="pointer"
@@ -54,13 +64,13 @@ const Navbar = () => {
               <BsSunFill
                 size="1.5rem"
                 cursor="pointer"
-                onClick={handleDarkMode}
+                onClick={handleLightMode}
               />
             )}
           </div>
         </div>
       </div>
-    </nav>
+    </NavbarStyle>
   );
 };
 

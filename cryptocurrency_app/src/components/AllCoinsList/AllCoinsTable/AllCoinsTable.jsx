@@ -4,7 +4,7 @@ const AllCoinsTable = () => {
   const allCoins = useSelector((state) => state.allCoins.allCoins)
   return (
     <div>
-      <table className="table table-striped tableAllCoins">
+      <table className="w-100 tableAllCoins">
         <thead>
           <tr>
             <th>#</th>
