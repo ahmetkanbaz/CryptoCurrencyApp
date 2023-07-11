@@ -1,7 +1,31 @@
 import PropTypes from "prop-types";
+import { moneyFormat } from "../../../helpers/moneyFormat";
 const AllCoinsTableItem = ({ coin }) => {
   console.log(coin);
-  const { id, image, name, symbol, current_price, market_cap_rank } = coin;
+  const {
+    id,
+    image,
+    name,
+    symbol,
+    current_price,
+    market_cap_rank,
+    market_cap,
+    high_24h,
+    low_24h,
+    price_change_percentage_24h,
+    circulating_supply
+  } = coin;
+
+  let percentage;
+  if(price_change_percentage_24h == 0) {
+    percentage = 'text-black'
+  }
+  else if (price_change_percentage_24h < 0) {
+    percentage = 'text-danger'
+  }
+  else {
+    percentage = 'text-success'
+  }
   return (
     <tr>
       <td>{market_cap_rank}</td>
@@ -10,17 +34,12 @@ const AllCoinsTableItem = ({ coin }) => {
         <span className="fw-bold">{name}</span>
         <span className="text-uppercase">{symbol}</span>
       </td>
-      <td>
-        {current_price.toLocaleString("en-US", {
-          style: "currency",
-          currency: "USD",
-        })}
-      </td>
-      <td>0</td>
-      <td>0</td>
-      <td>-1.0</td>
-      <td>15.47.</td>
-      <td>594.868.</td>
+      <td>{moneyFormat(current_price)}</td>
+      <td>{moneyFormat(high_24h)}</td>
+      <td>{moneyFormat(low_24h)}</td>
+      <td className={`${percentage}`}>{price_change_percentage_24h}</td>
+      <td>{moneyFormat(circulating_supply)}</td>
+      <td>{moneyFormat(market_cap)}</td>
     </tr>
   );
 };

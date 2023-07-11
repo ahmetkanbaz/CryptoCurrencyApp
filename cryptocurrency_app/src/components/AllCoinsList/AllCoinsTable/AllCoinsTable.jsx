@@ -2,7 +2,6 @@ import {useSelector} from 'react-redux'
 import AllCoinsTableItem from './AllCoinsTableItem';
 const AllCoinsTable = () => {
   const allCoins = useSelector((state) => state.allCoins.allCoins)
-  console.log(allCoins)
   return (
     <div>
       <table className="table table-striped tableAllCoins">
@@ -11,10 +10,10 @@ const AllCoinsTable = () => {
             <th>#</th>
             <th>Coin</th>
             <th>Fiyat</th>
-            <th>1s</th>
-            <th>24s</th>
-            <th>7g</th>
-            <th>24 Saatlik Hacim</th>
+            <th>En Yüksek 24s</th>
+            <th>En Düşük 24s</th>
+            <th>Değişim (%) 24s</th>
+            <th>Dolaşan Arz</th>
             <th>Pys Değ</th>
           </tr>
         </thead>
