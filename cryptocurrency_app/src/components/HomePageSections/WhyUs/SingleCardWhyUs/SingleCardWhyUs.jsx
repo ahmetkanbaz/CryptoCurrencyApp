@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 const SingleCardWhyUs = ({ singleWhyUs }) => {
   const { image, cardTitle } = singleWhyUs;
   return (
-    <div className="col-lg-4 col-md-6 col-12">
+    <div className="col-lg-4 col-md-6 col-12 mb-5 pe-3">
       <div className="d-flex align-items-start">
         <img src={image} alt="singleWhyUsImage" className="img-fluid" />
         <div className="ps-4">

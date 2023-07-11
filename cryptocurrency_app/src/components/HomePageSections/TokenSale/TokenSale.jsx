@@ -25,7 +25,7 @@ const TokenSale = () => {
             classname="bg-info border-0"
           />
         </div>
-        <div className="d-flex gap-5 justify-content-center">
+        <div className="d-flex gap-lg-5 gap-1 flex-wrap justify-content-center">
           <img
             src="https://demo.htmlcodex.com/2597/free-cryptocurrency-website-template/img/payment-1.png"
             alt=""
