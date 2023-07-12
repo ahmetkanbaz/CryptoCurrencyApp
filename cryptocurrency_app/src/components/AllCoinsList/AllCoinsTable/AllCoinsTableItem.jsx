@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import { moneyFormat } from "../../../helpers/moneyFormat";
+import { useNavigate } from "react-router-dom";
 const AllCoinsTableItem = ({ coin }) => {
+  const navigate = useNavigate()
   const {
     id,
     image,
@@ -24,7 +26,7 @@ const AllCoinsTableItem = ({ coin }) => {
     percentage = "text-success";
   }
   return (
-    <tr>
+    <tr onClick={() => navigate(`/detailcoin/${id}`)}>
       <td>{market_cap_rank}</td>
       <td className="d-flex align-items-center gap-2">
         <img src={image} alt={id} className="img-fluid" width="20px" />
