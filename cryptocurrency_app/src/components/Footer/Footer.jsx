@@ -7,10 +7,12 @@ import FooterInfo from './FooterTop/FooterInfo';
 import FooterNewsletter from './FooterTop/FooterNewsletter';
 import {FooterWrapper} from './FooterStyle'
 import FooterBottom from './FooterBottom/FooterBottom';
+import {useSelector} from 'react-redux'
 const Footer = () => {
+  const theme = useSelector((state) => state.theme.theme)
   return (
-    <BackgroundStyle className="pt-5">
-      <FooterWrapper className="container pt-5">
+    <BackgroundStyle className="pt-5" theme={theme}>
+      <FooterWrapper className="container pt-5" theme={theme}>
         <div className="row align-items-center">
           <FooterInfo />
           <FooterNewsletter />

@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 
 export const FooterWrapper = styled.div `
+input::placeholder {
+  color: ${(props) => props.theme == 'light' ? '#000000' : '#FFFFFF'};
+}
   .socialIcon {
     color: #16D5FF;
     cursor: pointer;

@@ -17,7 +17,7 @@ const FooterBottom = () => {
           <span>Designed By </span>
           <a
             href="https://htmlcodex.com/"
-            className="text-info text-decoration-none"
+            className="text-decoration-none"
             target="_blank"
             rel="noreferrer"
           >

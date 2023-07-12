@@ -1,11 +1,13 @@
 import PropTypes from "prop-types";
 import { SingleService } from "./SingleCardServiceStyle";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import {useSelector} from 'react-redux'
 const SingleCardServices = ({ singleService }) => {
   const { image, title } = singleService;
+  const theme = useSelector((state) => state.theme.theme)
   return (
-    <SingleService className="col-lg-4 col-md-6 col-12">
-      <div className="p-5 bg-white position-relative overflow-hidden">
+    <SingleService className="col-lg-4 col-md-6 col-12" theme={theme}>
+      <div className="p-5 position-relative overflow-hidden singleServiceCard">
         <div className="position-absolute servicesAbsolute"></div>
         <img src={image} alt="" className="img-fluid mb-4" />
         <h5 className="mb-3">{title}</h5>

@@ -1,5 +1,7 @@
 import {AccordionWrapper} from './AccordionStyle'
+import {useSelector} from 'react-redux'
 const Accordion = () => {
+  const theme = useSelector((state) => state.theme.theme)
   const accordionDatas = [
     {
       id: "collapseOne",
@@ -43,7 +45,7 @@ const Accordion = () => {
     },
   ];
   return (
-    <AccordionWrapper>
+    <AccordionWrapper theme={theme}>
       <div className="accordion" id="faqsAccordion">
         {accordionDatas.map((accordionData, index) => (
           <div className="accordion-item my-3 border-top" key={index}>
