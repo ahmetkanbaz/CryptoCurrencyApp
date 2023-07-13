@@ -3,7 +3,7 @@ import AllCoinsTableItem from './AllCoinsTableItem';
 const AllCoinsTable = () => {
   const allCoins = useSelector((state) => state.allCoins.allCoins)
   return (
-    <div>
+    <div className=' overflow-x-auto'>
       <table className="w-100 tableAllCoins">
         <thead>
           <tr>

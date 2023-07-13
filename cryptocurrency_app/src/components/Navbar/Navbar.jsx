@@ -3,20 +3,20 @@ import { Link } from "react-router-dom";
 import cryptoLogo from "../../assets/logo/cryptoLogo.png";
 import { setTheme } from "../../redux/slices/themeSlice/themeSlice";
 import { useDispatch, useSelector } from "react-redux";
-import {NavbarStyle} from './NavbarStyle'
+import { NavbarStyle } from "./NavbarStyle";
 const Navbar = () => {
-  const dispath = useDispatch()
-  const theme = useSelector((state) => state.theme.theme)
+  const dispath = useDispatch();
+  const theme = useSelector((state) => state.theme.theme);
 
   const handleDarkMode = () => {
-    dispath(setTheme('light'))
-    localStorage.setItem('allCoinsTheme', JSON.stringify('light'))
-  }
+    dispath(setTheme("light"));
+    localStorage.setItem("allCoinsTheme", JSON.stringify("light"));
+  };
 
   const handleLightMode = () => {
-    dispath(setTheme('dark'))
-    localStorage.setItem('allCoinsTheme', JSON.stringify('dark'));
-  }
+    dispath(setTheme("dark"));
+    localStorage.setItem("allCoinsTheme", JSON.stringify("dark"));
+  };
 
   return (
     <NavbarStyle className="navbar navbar-expand-lg sticky-top" theme={theme}>
@@ -53,8 +53,11 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
+          <div className="me-0 me-lg-auto w-50 mb-3 mb-lg-0">
+            <input type="text" className="form-control px-3"/>
+          </div>
           <div>
-            {theme == 'dark' ? (
+            {theme == "dark" ? (
               <BsMoonFill
                 size="1.2rem"
                 cursor="pointer"
