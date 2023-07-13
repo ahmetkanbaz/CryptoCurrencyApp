@@ -1,11 +1,11 @@
 const FooterBottom = () => {
   return (
-    <div>
+    <div className="footerBottom">
       <div className="d-flex justify-content-between align-items-center pb-4">
-        <div className="opacity-50">
+        <div>
           <a
             href="https://www.coingecko.com/tr"
-            className="fw-bold text-decoration-none text-black"
+            className="fw-bold text-decoration-none"
             target="_blank"
             rel="noreferrer"
           >
@@ -13,11 +13,11 @@ const FooterBottom = () => {
           </a>
           <span> was used while developing the project.</span>
         </div>
-        <div className="opacity-50">
+        <div>
           <span>Designed By </span>
           <a
             href="https://htmlcodex.com/"
-            className="text-info text-decoration-none"
+            className="text-decoration-none fw-bold"
             target="_blank"
             rel="noreferrer"
           >
@@ -30,7 +30,7 @@ const FooterBottom = () => {
         <a
           href="https://github.com/ahmetkanbaz"
           target="_blank"
-          className="text-decoration-none ms-lg-1"
+          className="text-decoration-none ms-lg-1 fw-bold"
           rel="noreferrer"
         >
           Ahmet Kanbaz
