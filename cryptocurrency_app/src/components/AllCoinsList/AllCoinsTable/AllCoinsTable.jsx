@@ -9,12 +9,12 @@ const AllCoinsTable = () => {
           <tr>
             <th>#</th>
             <th>Coin</th>
-            <th>Fiyat</th>
-            <th>En Yüksek 24s</th>
-            <th>En Düşük 24s</th>
-            <th>Değişim (%) 24s</th>
-            <th>Dolaşan Arz</th>
-            <th>Pys Değ</th>
+            <th>Price</th>
+            <th>Highest 24s</th>
+            <th>Lowest 24s</th>
+            <th>Change (%) 24s</th>
+            <th>Circulating Supply</th>
+            <th>Market Value</th>
           </tr>
         </thead>
         <tbody>
