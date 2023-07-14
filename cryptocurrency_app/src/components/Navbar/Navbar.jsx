@@ -1,11 +1,13 @@
 import { BsSunFill, BsMoonFill } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import cryptoLogo from "../../assets/logo/cryptoLogo.png";
 import { setTheme } from "../../redux/slices/themeSlice/themeSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { NavbarStyle } from "./NavbarStyle";
+import { setSearchQuery } from "../../redux/slices/filterSlice/filterSlice";
 const Navbar = () => {
   const dispath = useDispatch();
+  const navigate = useNavigate();
   const theme = useSelector((state) => state.theme.theme);
 
   const handleDarkMode = () => {
@@ -17,6 +19,17 @@ const Navbar = () => {
     dispath(setTheme("dark"));
     localStorage.setItem("allCoinsTheme", JSON.stringify("dark"));
   };
+
+  const handleSearch = (e) => {
+    dispath(setSearchQuery(e.target.value));
+  };
+
+  const handleSearchEnter = (e) => {
+    if(e.key == 'Enter') {
+      navigate('/allCoins')
+      e.preventDefault()
+    }
+  }
 
   return (
     <NavbarStyle className="navbar navbar-expand-lg sticky-top" theme={theme}>
@@ -54,7 +67,12 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="me-0 me-lg-auto w-50 mb-3 mb-lg-0">
-            <input type="text" className="form-control px-3"/>
+            <input
+              type="text"
+              className="form-control px-3 searchInput shadow-none"
+              onChange={handleSearch}
+              onKeyDown={handleSearchEnter}
+            />
           </div>
           <div>
             {theme == "dark" ? (

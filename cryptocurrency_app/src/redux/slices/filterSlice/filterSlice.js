@@ -13,15 +13,12 @@ const filterSlice = createSlice({
     setSearchQuery: (state, action) => {
       state.searchQuery = action.payload
     },
-    setFilterOptions: (state, action) => {
-      state.filterOptions = action.payload
-    },
     setFilterCoins: (state, action) => {
       state.filterCoins = action.payload
     }
   }
 })
 
-export const {setSearchQuery, setFilterOptions, setFilterCoins} = filterSlice.actions;
+export const {setSearchQuery, setFilterCoins} = filterSlice.actions;
 
 export default filterSlice.reducer;
