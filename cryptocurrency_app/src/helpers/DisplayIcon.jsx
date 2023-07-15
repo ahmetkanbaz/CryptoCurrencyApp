@@ -33,10 +33,10 @@ export const DisplayIcon4Price = () => {
       return <BsSortDownAlt size="1.2rem" />;
     } else if (
       [
-        "Low Ex2Ch",
         "Ex2Ch",
-        'Percentage Ex2Ch"',
         "High Ex2Ch",
+        "Low Ex2Ch",
+        'Percentage Ex2Ch',
         "Supply Ex2Ch",
         "Market Ex2Ch",
       ].includes(sortOption)
