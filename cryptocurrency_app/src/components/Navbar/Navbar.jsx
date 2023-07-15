@@ -72,6 +72,7 @@ const Navbar = () => {
               className="form-control px-3 searchInput shadow-none"
               onChange={handleSearch}
               onKeyDown={handleSearchEnter}
+              placeholder="Search Coin..."
             />
           </div>
           <div>
