@@ -1,23 +1,33 @@
+import {BackgroundStyle} from '../../common/BackgroundStyle/BackgroundStyle'
+import FollowUs from './FooterLinks/FollowUs/FollowUs';
+import GetInTouch from './FooterLinks/GetInTouch/GetInTouch';
+import OurServices from './FooterLinks/OurServices/OurServices';
+import QuickLinks from './FooterLinks/QuickLinks/QuickLinks';
+import FooterInfo from './FooterTop/FooterInfo';
+import FooterNewsletter from './FooterTop/FooterNewsletter';
+import {FooterWrapper} from './FooterStyle'
+import FooterBottom from './FooterBottom/FooterBottom';
+import {useSelector} from 'react-redux'
 const Footer = () => {
+  const theme = useSelector((state) => state.theme.theme)
   return (
-    <div className="bg-black text-white py-5">
-      <div className="container">
-        <h4 className="text-center pb-4">Crypto Currency App</h4>
-        <div className="pt-4 border-top">
-          <p className="text-center">
-            <a
-              href="https://rapidapi.com/Glavier/api/binance43"
-              className="fw-bold text-decoration-none text-white"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Binance API
-            </a>
-            <span> was used while developing the project.</span>
-          </p>
+    <BackgroundStyle className="pt-5" theme={theme}>
+      <FooterWrapper className="container pt-5" theme={theme}>
+        <div className="row align-items-center">
+          <FooterInfo />
+          <FooterNewsletter />
         </div>
-      </div>
-    </div>
+        <div className="row py-5">
+          <GetInTouch />
+          <OurServices />
+          <QuickLinks />
+          <FollowUs />
+        </div>
+        <div className="pt-4 pb-3 border-top">
+          <FooterBottom />
+        </div>
+      </FooterWrapper>
+    </BackgroundStyle>
   );
 };
 

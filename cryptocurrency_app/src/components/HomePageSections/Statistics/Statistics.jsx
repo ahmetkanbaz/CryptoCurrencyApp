@@ -1,6 +1,8 @@
 import SingleStatisticCard from "./SingleStatisticCard/SingleStatisticCard";
 import { BackgroundStyle } from "../../../common/BackgroundStyle/BackgroundStyle";
+import {useSelector} from 'react-redux'
 const Statistics = () => {
+  const theme = useSelector((state) => state.theme.theme)
   const statisticsDatas = [
     {
       image:
@@ -23,7 +25,7 @@ const Statistics = () => {
   ];
   return (
     <div className="py-5">
-      <BackgroundStyle className="container py-5 rounded">
+      <BackgroundStyle className="container py-5 rounded" theme={theme}>
         <div className="row">
           {
             statisticsDatas.map((statisticsData, index) => <SingleStatisticCard key={index} statisticsData = {statisticsData} />)

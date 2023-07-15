@@ -41,7 +41,7 @@ const WhyUs = () => {
           title="Why Us?"
           subTitle="The Best In The crypto Industry"
         />
-        <div className="row g-5">
+        <div className="row">
           {whyUsDatas.map((singleWhyUs, index) => (
             <SingleCardWhyUs key={index} singleWhyUs={singleWhyUs} />
           ))}

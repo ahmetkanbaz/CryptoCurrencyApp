@@ -1,8 +1,10 @@
 import UpperSection from "../../../common/UpperSection/UpperSection";
 import { BackgroundStyle } from "../../../common/BackgroundStyle/BackgroundStyle";
 import SingleCardServices from "./SingleCardServices/SingleCardServices";
+import {useSelector} from 'react-redux'
 
 const Services = () => {
+  const theme = useSelector((state) => state.theme.theme)
   const servicesDatas = [
     {
       image:
@@ -37,7 +39,7 @@ const Services = () => {
   ];
   return (
     <div className="py-5">
-      <BackgroundStyle className="container py-5 px-4">
+      <BackgroundStyle className="container py-5 px-4" theme={theme}>
         <div className="py-5">
           <UpperSection
             title="Services"
