@@ -34,5 +34,3 @@ Projeyi klonladıktan sonra projenin bulunduğu dizinde aşağıdaki komutu çal
 
 ### Proje Kaynakları
 - [CoinGecko API](https://www.coingecko.com/en/api)
-
-### Proje Linki
