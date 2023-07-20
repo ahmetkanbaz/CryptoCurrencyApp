@@ -30,7 +30,7 @@ Projeyi klonladıktan sonra projenin bulunduğu dizinde aşağıdaki komutu çal
 - HTML Codex
 
 ### Proje Tasarımı
-- [HTML Codex](https://htmlcodex.com/)
+- [HTML Codex](https://htmlcodex.com/) (Bazı kısımlara benzetilmiştir.)
 
 ### Proje Kaynakları
 - [CoinGecko API](https://www.coingecko.com/en/api)
